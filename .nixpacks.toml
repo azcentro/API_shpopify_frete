@@ -1,0 +1,10 @@
+[phases.setup]
+runtime = "python"
+
+[phases.build]
+commands = [
+    "pip install -r requirements.txt"
+]
+
+[phases.start]
+command = "python frete.py"
