@@ -8,7 +8,7 @@ dotenv.load_dotenv()
 
 app = Flask(__name__)
 
-# Ativar CORS para todas as rotas..
+# Ativar CORS para todas as rotas...
 CORS(app)
 
 CORS(app, resources={r"/*": {"origins": "*"}})  # Permitir todos os domínios
