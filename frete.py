@@ -11,7 +11,9 @@ app = Flask(__name__)
 # Ativar CORS para todas as rotas...
 CORS(app)
 
-CORS(app, resources={r"/*": {"origins": "*"}})  # Permitir todos os domínios
+#CORS(app, resources={r"/*": {"origins": "*"}})  # Permitir todos os domínios
+
+CORS(app, resources={r"/*": {"origins": "https://azcentrodebeleza.com"}}) # Permitir apenas o domínio do frontend
 
 # Configurações
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
